@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <limits.h>
+
+int main (void)
+{
+  printf("signed char: %d ~ %d\n", SCHAR_MIN, SCHAR_MAX);
+
+  return 0;
+}

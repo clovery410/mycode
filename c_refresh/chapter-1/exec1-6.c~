@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main(void)
+{
+  /*
+  if (getchar() != EOF) {
+    printf("Not EOF!\n");
+  } else {
+    printf("Is EOF!\n");
+  }
+  */
+  printf("%d\n", getchar() != EOF);
+
+  return 0;
+}

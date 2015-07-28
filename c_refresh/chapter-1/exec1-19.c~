@@ -1,0 +1,39 @@
+#include <stdio.h>
+#define MAX 1000
+
+char reverse (char line[], int len);
+
+int main (void)
+{
+  char line[MAX];
+  int length;
+
+  length = origin(line, MAX);
+  printf("%s", reverse(line, length));
+
+  return 0;
+}
+
+int origin (char s[], int lim)
+{
+  int c, i;
+
+  for (i = 0; i < lim - 1 && (c = getchar()) != EOF && c != '\n'; ++i)
+      s[i] = c;
+  s[i] = '\0';
+
+  return i;
+}
+
+char reverse (char s[], int len)
+{
+  char re[MAX];
+  int i;
+
+  for (i = 0; i < len; ++i)
+    {
+      re[i] = s[len -1 - i];
+    }
+
+  return char re[];
+}

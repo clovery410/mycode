@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main(void)
+{
+  int fahr, celsius;
+  int lower, upper, step;
+
+  lower = 0;
+  upper = 300;
+  step = 20;
+
+
+  for (fahr = lower; fahr < upper; fahr+=step)
+    {
+      celsius = (5 / 9) * (fahr - 32);
+      printf("%d\t", fahr);
+      printf("%d\n", celsius);
+    }
+
+  return 0;
+}
+
+

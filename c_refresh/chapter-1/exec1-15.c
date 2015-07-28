@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+void comTable(int low, int high, int step);
+
+int main(void)
+{
+  int low = 0;
+  int high = 300;
+  int step = 20;
+
+  comTable(low, high, step);
+
+  return 0;
+}
+
+void comTable(int base, int top, int step)
+{
+  float fahr, celsius;
+
+  for (fahr = base; fahr <= top; fahr += step)
+    printf("%3.0f\t%6.1f\n", fahr, (5.0 / 9.0) * (fahr - 32.0));
+}

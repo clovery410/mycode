@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void)
+{
+  int c, n;
+
+  while ((c = getchar()) != EOF)
+    {
+      if (c == ' ')
+	;
+      else
+	putchar(c);
+    }
+}

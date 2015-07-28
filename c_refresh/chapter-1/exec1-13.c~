@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+#define LEN 20
+int main(void)
+{
+  int c, i, j;
+  int word[LEN];
+
+  for (i = 0; i < LEN; ++i)
+    word[i] = 0;
+
+  i = 0;
+  while ((c = getchar()) != EOF)
+    {
+      if (c == ' ' || c == '\t' || c == '\n')
+	++i;
+      else
+	++word[i];
+    }
+
+  for (i = 0; i < LEN; ++i)
+    {
+      for (j = word[i]; j > 0; --j)
+	printf("*");
+      printf("\n");
+    }
+
+  return 0;
+}

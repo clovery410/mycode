@@ -1,0 +1,11 @@
+#include <stdio.h>
+#define MAX 1000;
+
+int main(void)
+{
+  int i, c;
+  int lim = MAX;
+
+  i = 0;
+  while (
+}
