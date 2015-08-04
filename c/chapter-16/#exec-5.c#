@@ -1,0 +1,10 @@
+struct date {
+  int month, day, year;
+};
+
+int day_of_year(struct date d)
+{
+  if (d.year & 4 == 0 && (d.year % 100 != 0 || d.year % 400 == 0)) {
+    
+  }
+}

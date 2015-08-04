@@ -1,0 +1,10 @@
+1. What would Python do?
+>>> square = lambda x: x * x
+>>> def double(f):
+... 	def doubler(x):
+...	    return f(f(x))
+...	return doubler
+>>> foo = double(square)
+>>> foo(4)
+256
+

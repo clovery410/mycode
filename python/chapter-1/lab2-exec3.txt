@@ -1,0 +1,26 @@
+>>> doctor = lambda : "who"
+# Q1
+>>> doctor()
+'who'
+-----------
+>>> ninth = lambda x: "Fantastic!" if x == 9 else tenth
+>>> tenth = lambda y: "Allons-y!" if y == 10 else eleventh
+>>> eleventh = lambda z: "Geronimo!" if z == 11 else ninth
+# Q2
+>>> ninth(9)
+'Fantastic!'
+-----------
+# Q3
+>>> ninth(2)(10)
+'Allons-y!'
+-----------
+# Q4
+>>> tenth(10)
+'Allons-y!'
+-----------
+# Q5 tenth(12) is eleventh
+True
+-----------
+# Q6
+>>> eleventh(10)(11)(9)(11)
+'Geronimo!'

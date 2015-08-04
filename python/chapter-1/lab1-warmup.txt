@@ -1,0 +1,33 @@
+#Q1
+>>> a = 1
+>>> b = a + 1
+>>> a + b + a * b
+5
+
+#Q2
+>>> a == b
+False
+
+#Q3
+>>> z, y = 1, 2
+>>> print(z)
+1
+
+#Q4
+>>> def square(x):
+...     print(x * x)    #Hit enter twice
+...
+>>> a = square(b)
+4
+
+#Q5
+>>> print(a)
+None
+
+#Q6
+>>> def square(y):
+...     return y * y   #Hit enter twice
+...
+>>> a = square(b)
+>>> print(a)
+4

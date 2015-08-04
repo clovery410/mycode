@@ -1,0 +1,18 @@
+Q7: The algorithm for computing the UPC check digits ends with the following steps:
+Subtract 1 from the total.
+Compute the remainder when the adjusted total is divided by 10.
+Subtract the remainder from 9.
+
+It's tempting to try to simplify the algorithm by using these steps instead:
+
+Compute the remainder when the total is divided by 10.
+Subtract the remainder from 10.
+
+Why doesn't this technique work?
+
+
+Answer:
+first algorithm is 9 - (x - 1) % 10
+second algotithm is 10 - x % 10 => 9 - (x % 10 - 1)
+So, we can only compare (x - 1) % 10 and (x % 10 - 1), the value of first one is in [0, 9], the value of second one is in [-1, 8], thus, the result of first algorithm is in [0, 9], the result of second algorithm is in [1, 10].
+However, our check digit can only be one digit, 10 has two.

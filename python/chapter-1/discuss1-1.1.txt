@@ -1,0 +1,6 @@
+Question: Determine the result of evaluating the following expression:
+	  from operator import add, mul, sub, truediv
+	  >>> truediv (add(mul(4, 5), sub(6, 1)), 5)
+
+Answer: It will return 5.0
+	And the operators's applying sequence is (1)mul, sub (2)add (3)truediv 

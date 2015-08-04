@@ -1,0 +1,5 @@
+List the appropriate commmand to perform the following functions.
+
+Rename a file: mv
+Create a new directory: mkdir
+Print the contents of a file: cat

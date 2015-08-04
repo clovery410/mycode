@@ -1,0 +1,26 @@
+Exec-1.9.1
+(define (+ a b)
+  (if (= a 0) b (inc (+ (dec a) b))))
+
+This procedure is recursive, if evaluating (+ 4 5), it will perform like below:
+
+(+ 4 5) because a not equals to 0,
+so return, (inc (+ 3 5));
+now a equals to 3, so return (inc (inc (+ 2 5)))
+now a equals to 2, so return (inc (inc (inc (+ 1 5))))
+now a equals to 1, so return (inc (inc (inc (inc (+ 0 5)))))
+now a equals to 0, so return (inc (inc (inc (inc 5))))  => (inc (inc (inc 6))) => (inc (inc 7)) => (inc 8) => 9
+
+
+Exec-1.9.2
+(define (+ a b)
+  (if (= a 0) b (+ (dec a) (inc b))))
+
+This procedure is iterative, if evaluating (+ 4 5), it will perform like below:
+
+(+ 4 5) because a not equals to 0,
+so return, (+ 3 6)
+now a equals to 3, so return (+ 2 7)
+now a equals to 2, so return (+ 1 8)
+now a equals to 1, so return (+ 0 9)
+now a equals to 0, so retuen 9

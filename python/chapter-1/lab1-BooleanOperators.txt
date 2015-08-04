@@ -1,0 +1,36 @@
+#Q1
+>>> a, b = 10, 6
+>>> a > b and a == 0
+False
+
+#Q2
+>>> a > b or a == 0
+True
+
+#Q3
+>>> not a > 0
+False
+
+#Q4
+>>>a != 0
+True
+
+#Q5
+>>> True and False
+False
+
+#Q6
+>>> True and True
+True
+
+#Q7
+>>> True or False
+True
+
+#Q8
+>>> False or False
+False
+
+#Q9
+>>> True and True or True and False
+True

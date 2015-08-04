@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(void)
+{
+  int m, n, gcd;
+  
+  printf("Enter two integers: ");
+  scanf("%d %d", &m, &n);
+
+  //for (i = 1; i < m && i < n; i++)
+  //if (m % i == 0 && n % i == 0)
+  //  gcd = i;
+  while (n != 0) {
+    gcd = m % n;
+    m = n;
+    n = gcd;
+  }
+  printf("Greatest common divisor: %d\n", m);
+ 
+  return 0;
+}

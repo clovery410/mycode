@@ -1,0 +1,13 @@
+1. What would Python print?
+>>> albert = 2
+>>> def robert(albert):
+... 	def robert(albert):
+...	    albert += 2
+...	    return albert
+...	return robert
+>>> pirnt(robert(albert)(albert))
+4
+------------
+>>> print(albert)
+2
+------------

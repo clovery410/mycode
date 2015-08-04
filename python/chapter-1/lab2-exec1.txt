@@ -1,0 +1,66 @@
+>>> def square(x):
+    	return x * x
+>>> def neg(f, x):
+        return -f(x)
+# Q1
+>>> neg(square, 4)
+-16
+--------
+
+>>> def first(x):
+... 	x += 8
+...	def second(y):
+...		print('second')
+...		return x + y
+...	print('first')
+...	return second
+...
+# Q2
+>>> f = first(15)
+first
+---------
+# Q3
+>>> f(16)
+second
+39
+----------
+
+>>> def foo(x):
+... 	def bar(y):
+...	    return x + y
+...	return bar
+
+>>> boom = foo(23)
+# Q4
+>>> boom(42)
+65
+------------
+# Q5
+>>> foo(6)(7)
+13
+-------------
+>>>func = boom
+# Q6
+>>> func is boom
+True
+------------
+>>> func = foo(23)
+# Q7
+>>> func is boom
+False
+------------
+
+>>> def Troy():
+... 	abed = 0
+...	while abed < 10:
+...	      britta = lambda: abed
+...	      abed += 1
+...	abed = 20
+...	return britta
+...
+>>> jeff = Troy()
+>>> shirley = lambda: jeff
+>>> pierce = shirley()
+# Q8
+>>> pierce()
+20

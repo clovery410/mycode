@@ -1,0 +1,22 @@
+>>> n = 2
+>>> def exp_decay(n):
+...     if n % 2 != 0:
+...	    return
+...	while n > 0:
+...	    print(n)
+...	    n = n // 2 # See exercise 3 for explanation of what '//' stands for
+...
+>>> exp_dacay(1024)
+1024
+512
+256
+128
+64
+32
+16
+8
+4
+2
+1
+>>> exp_decay(5)
+Nothing shows up

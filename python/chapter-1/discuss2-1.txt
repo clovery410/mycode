@@ -1,0 +1,19 @@
+Here is one method to check if a number is prime:
+
+def is_prime(n):
+    k = 2
+    while k < n:
+    	  if n % k == 0:
+	     return False
+	  k += 1
+    return True
+
+Q1:How does this function work?
+
+Q2:This is a decent way of testing if a number is prime, but looping k all the way to n might be a bit cumbersome. As a little bonus question, can you think of a better place to stop?
+
+Answer1: Loop k = k + 1 from initial value 2, and verifying that if n can be divided by k, if yes, return Flase, till k >= n, return True.
+
+Answer2: we can stop at 'the square root of n'
+Since if d divides n, then n/d also divides n. d and n/d cannot both be greater than square root(n)
+ 
