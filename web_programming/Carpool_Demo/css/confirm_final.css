@@ -1,0 +1,126 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+#main{
+	padding-bottom: 370px;
+	background-color: #f2f2f2;
+
+	border-top: 1px solid #c4c4c4;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#content{
+	margin-top: 10%;
+	margin-left: 25%;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 25px;
+	color: #595959;
+}
+
+.tip{
+	font-size: 15px;
+	display: inline-block;
+}
+
+#homepage{
+	display: inline-block;
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+#foot{
+	text-align: center;
+	font-size: 15px;
+	padding-top: 3px;
+	margin: 0;
+}
+
+
+
+/***************header css***************/
+#header {
+	height: 65px;
+}
+
+h1{
+	font-family: Impact, Charcoal, sans-serif;
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 40px;
+	float: left;
+}
+
+#scu{
+	margin-left: 20px;
+	color: black;
+}
+
+#carpool{
+	background-color: #269900;
+	color: white;
+	border-radius: 7px;
+}
+
+#driver{
+	float: right;
+	text-decoration: none;
+	font-family: Helvetica;
+	color: #595959;
+	font-size: 17px;
+	border: 2px solid #a6a6a6;
+	border-radius: 2px;
+	padding: 5px;
+	margin-top: 20px;
+	margin-right: 2%;
+}
+
+#msg{
+	float: right;
+	width: 30px;
+	margin-top: 25px;
+	margin-right: 2%;
+}
+
+#pic{
+	float: right;
+	width: 25px;
+	margin-top: 25px;
+	margin-right: 2%;
+
+}
+
+#slideProfile {
+  padding-right: 5%;
+  display: none;
+  position: relative;
+  float: right;
+  width: 20%;
+  height: 200%;
+  display: none;
+  /*margin-left: :10%;*/
+  margin-right: 5%;
+  margin-top: 2%;
+  padding: 10px;
+  background-color: #f2f2f2;
+  border: solid 1px #c3c3c3;
+}
+
+.headShot_profile{
+	width: 80px;
+	height: 80px;
+	border-radius: 30px;
+  float: left;
+}
+#star {
+  width: 30%;
+  height: 30px;
+}

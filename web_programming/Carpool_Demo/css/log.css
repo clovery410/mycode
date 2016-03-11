@@ -1,0 +1,134 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+#main{
+	background-color: #f2f2f2;
+	padding-bottom: 20px;
+}
+
+#signup{
+	text-align: center;
+	display: inline-block;
+	font-family: Helvetica;
+	width: 50%;
+	padding-top: 30px;
+	line-height: 20px;
+	
+	border-right: 2px solid #c4c4c4;
+	border-top: 1px solid #c4c4c4;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#login{
+	text-align: center;
+	display: inline-block;
+	float: right;
+	font-family: Helvetica;
+	width: 50%;
+	padding-top: 30px;
+	line-height: 20px;
+
+	border-top: 1px solid #c4c4c4;
+	box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.head{
+	font-family: "Arial Black", Gadget, sans-serif;
+	padding-top: 0;
+	text-align: center;
+	font-size: 30px;
+}
+.label{
+	text-align: left;
+}
+.form{
+	display: inline-block;
+	width: 55%;
+	font-size: 18px;
+	color: #636269;
+	position: relative;
+}
+
+input{
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+	border: 1px solid #c4c4c4;
+	margin-top: 2px;
+	margin-bottom: 15px;
+
+}
+
+.button{
+	width: 120px;
+	height: 40px;
+	font-size: 20px;
+	background-color: #269900;
+	border:hidden;
+	color: white;
+	margin-top: 20px;
+	font-family: Verdana, Geneva, sans-serif;
+	
+	-webkit-transition: color 0.2s ease-out;
+    -moz-transition: color 0.2s ease-out;
+    -o-transition: color 0.2s ease-out;
+    -ms-transition: color 0.2s ease-out;
+    transition: color 0.2s ease-out;
+ 	-webkit-transition: background-color 0.2s ease-out;
+    -moz-transition: background-color 0.2s ease-out;
+    -o-transition: background-color 0.2s ease-out;
+    -ms-transition: background-color 0.2s ease-out;
+    transition: background-color 0.2s ease-out;   
+}
+
+.button:hover{
+	color: #269900;
+	background-color: white;
+	box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 6px 16px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.b{
+	width: 100%;
+	text-align: center;
+}
+
+#foot{
+	text-align: center;
+	font-size: 15px;
+	padding-top: 3px;
+	margin: 0;
+}
+
+/***************header css***************/
+#header {
+	height: 65px;
+}
+
+h1{
+	font-family: Impact, Charcoal, sans-serif;
+	margin: 0;
+	margin-top: 10px;
+	padding: 0;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 40px;
+	float: left;
+}
+
+#scu{
+	margin-left: 20px;
+	color: black;
+}
+
+#carpool{
+	background-color: #269900;
+	color: white;
+	border-radius: 7px;
+}
