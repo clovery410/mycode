@@ -1,0 +1,7 @@
+class Solution(object):
+    def wordBreak(self, name, periodic_table):
+        """
+        input name is a string
+        input periodic_table is a set of element names
+        output should be a boolean
+        """

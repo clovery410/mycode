@@ -1,0 +1,36 @@
+class Solution(object):
+    # solution1, not optimal solution, running time is O(n^2)
+    def lengthOfLongestSubstringTwoDistinct(self, s):
+        if len(s) <= 2:
+            return s
+
+        max_len = 1
+        start_idx = 1
+        for i in xrange(1, len(s)):
+            if s[i] != s[i-1]:
+                pre, cur = s[i-1], s[i]
+                j = i - 1
+                while j >= 0 and (s[j] == pre or s[j] == cur):
+                    j -= 1
+                cur_len = i - j
+            else:
+                cur_len += 1
+            max_len = max(max_len, cur_len)
+                    
+                    max_len = i - j
+                    start_idx = j + 1
+        return s[start_idx: start_idx + max_len]
+
+    # solution2, using sliding window, which running time is O(n)
+    def lengthOfLongestSubstringTwoDistinct(self, s):
+        if len(s) <= 2:
+            return s
+        count = collections.defaultdict(int)
+        for c in s:
+            count[c] += 1
+
+        
+
+if __name__ == "__main__":
+    sol = Solution()
+    print sol.lengthOfLongestSubstringTwoDistinct("eeeeeee")

@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int titleToNumber(char* s) {
+  int i, result;
+  result = 0;
+
+  while(s) {
+    result += *s - 'A';
+    
+}

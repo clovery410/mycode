@@ -5,6 +5,7 @@ class TreeNode(object):
         self.right = None
 
 class Solution(object):
+    #Solution 1, most original version
     def levelOrder(self, root):
         out = list()
         if root is None:
@@ -37,8 +38,27 @@ class Solution(object):
 
         return out
 
+    #Solution2, second try with dfs
+    def levelOrder2(self, root):
+        def dfs(node, level, res):
+            if node is None:
+                return
+            if level == len(res):
+                res.append([])
+            res[level].append(node.val)
+            dfs(node.left, level + 1, res)
+            dfs(node.right, level + 1, res)
+        res = []
+        dfs(root, 0, res)
+        return res
 
 if __name__ == '__main__':
+    node1 = TreeNode(1)
+    node2 = TreeNode(2)
+    node3 = TreeNode(3)
+    node1.left = node2
+    node1.right = node3
+
     sol = Solution()
-                
+    print sol.levelOrder2(node1)
             

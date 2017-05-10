@@ -1,0 +1,22 @@
+class TreeNode(object):
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+class Solution(object):
+    def kthSmallest(self, root, k):
+        def insertAllLeft(node):
+            while node:
+                level_nodes.append(node)
+                node = node.left
+                
+        level_nodes = []
+        insertAllLeft(root)
+        for x in xrange(k):
+            top = level_nodes.pop()
+            if x == k - 1:
+                return top.val
+            node = top.right
+            while top:
+                insertAllLeft(top.right)

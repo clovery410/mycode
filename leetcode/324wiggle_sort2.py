@@ -1,4 +1,5 @@
 class Solution(object):
+    # This partition is not good, may fall into worst case, need to rewrite it later!
     def partition_into3(self, p_i, nums):
         n = len(nums)
         p = nums[p_i]
