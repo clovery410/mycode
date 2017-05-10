@@ -1,0 +1,41 @@
+;; f1: is-stay
+;; f2: is-turn
+;; f3: is-move1
+;; f4: is-move2
+;; f5: is-move3
+;; f6: is-eat
+
+;; f7: is-strongest-within-1
+;; f8: is-strongest-within-2
+;; f9: is-strongest-within-3
+;; f10: is-current-not-accessible
+;; f11: is-left-hand-vege
+;; f12: is-right-hand-vege
+;; f13: is-left-side-has-vege
+;; f14: is-right-side-has-vege
+;; f15: is-straight-line-has-vege
+;; f16: is-surround-by-predator
+;; f17: is-doing-nothing-underattack
+;; f18: is-taking-action-underattack
+;; f19: is-eating-front-vege
+
+
+(define w1 -1)
+(define w2 -2)
+(define w3 -10)
+(define w4 -30)
+(define w5 -60)
+(define w6 -5)
+(define w7 100)
+(define w8 50)
+(define w9 20)
+(define w10 -1000)
+(define w11 80)
+(define w12 80)
+(define w13 40)
+(define w14 40)
+(define w15 60)
+(define w16 -500)
+(define w17 -100)
+(define w18 50)
+(define w19 500)

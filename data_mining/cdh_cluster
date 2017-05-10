@@ -1,0 +1,20 @@
+You can apply an account on the Design Center's CDH cluster and run
+MapReduce program in distributed mode.
+
+To remote access CHD cluster, please follow the steps below:
+    http://wiki.helpme.engr.scu.edu/index.php/Hadoop
+
+E.g., 
+cd <work sapce>
+download the WordCount source code from http://www.cloudera.com/content/cloudera-content/cloudera-docs/HadoopTutorial/CDH4/Hadoop-Tutorial/ht_wordcount1_source.html?scroll=topic_5_1
+setup cdh
+hadoop classpath
+export classpath="<output from hadoop classpath>"
+javac -cp $classpath -d . *.java
+jar -cvf wc.jar -C . .
+hadoop fs -mkdir wc_input
+hadoop fs -copyFromLocal <test data> wc_input
+hadoop jar wc.jar org.myorg.WordCount wc_input wc_output
+hadoop fs -ls wc_output
+hadoop fs -cat wc_output/part-000*
+

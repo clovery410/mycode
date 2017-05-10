@@ -1,0 +1,12 @@
+h = 0.5, initial_temp = 0.5, lamda = 1.2, tolerance = 1e-6
+jacobi:
+46.18
+265 iterations
+
+gauss:
+38.8815
+237 iterations
+
+sor:
+33.8055
+161 iterations

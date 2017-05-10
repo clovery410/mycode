@@ -1,0 +1,160 @@
+*** Starting simulation Predatory ***
+Initializing world
+  SIZE-X: 10
+  SIZE-Y: 30
+  DEFAULT-ENERGY: 10000
+  SIMULATION-LENGTH: 1000
+  PREDATOR
+    DAMAGE: 100
+    LIFE-SPAN: 100
+    NUM-INSTANCES: 10
+  PREDATOR
+    DAMAGE: 50
+    LIFE-SPAN: 50
+    NUM-INSTANCES: 10
+  PREDATOR
+    DAMAGE: 1
+    LIFE-SPAN: 5
+    NUM-INSTANCES: 20
+Spawning agents
+  Random (A00)
+ 
+Starting Turn 0
+ 
+    000 001 002 003 004 005 006 007 008 009
+000         P05                         P05 000
+                                           
+001                 P05     P05         P05 001
+                                           
+002         P05 P03                     P03 002
+                                           
+003                                         003
+                                           
+004                                         004
+                                           
+005                                         005
+                                           
+006         P04 P04         P03             006
+                                           
+007                                 P03 P04 007
+                                           
+008                                         008
+                                           
+009                                         009
+                                           
+010                             P05         010
+                                           
+011 P05                         P04         011
+                                           
+012                                         012
+                                           
+013                     P04                 013
+                                           
+014 P03                                 P05 014
+                                           
+015     P03 P05                             015
+                                           
+016         A00                         P05 016
+             ^                             
+017                                     P04 017
+                                           
+018                                         018
+                                           
+019                             P05         019
+                                           
+020 P05 P04         P05                     020
+                                           
+021 P05             P05     P04             021
+                                           
+022                         P03             022
+                                           
+023 P03                     P05             023
+                                           
+024                                         024
+                                           
+025     P04                             P05 025
+                                           
+026                                         026
+                                           
+027         P05                 P05         027
+                                           
+028         P03                     P04     028
+                                           
+029                         P03             029
+                                           
+    000 001 002 003 004 005 006 007 008 009
+ 
+  ** All agents have died -- aborting simulation
+
+Map at end of simulation:
+    000 001 002 003 004 005 006 007 008 009
+000         P05                         P05 000
+                                           
+001                 P05                 P05 001
+                                           
+002         P05 P03                     P03 002
+                                           
+003                                         003
+                                           
+004                                         004
+                                           
+005                                         005
+                                           
+006         P04 P04         P03             006
+                                           
+007                                 P03     007
+                                           
+008                                         008
+                                           
+009                                         009
+                                           
+010                             P05 P05     010
+                                           
+011                             P04         011
+                                           
+012                                         012
+                                           
+013                                         013
+                                           
+014     P03     P05     P04             P05 014
+                                           
+015     P03 P05                             015
+                                           
+016         A00                         P05 016
+             ^                             
+017                                     P04 017
+                                           
+018                                         018
+                                           
+019     P04                     P05         019
+                                           
+020 P05             P05                     020
+                                           
+021 P05             P05     P04             021
+                                           
+022                         P03 P05         022
+                                           
+023 P03                     P05             023
+                                           
+024                                         024
+                                           
+025     P04                             P05 025
+                                           
+026                                         026
+                                           
+027         P05                             027
+                                           
+028         P03                     P04     028
+                                           
+029                         P03         P04 029
+                                           
+    000 001 002 003 004 005 006 007 008 009
+Summary of agent performance:
+Random: 0 (RIP)
+
+Destroying agents
+
+Destroying world
+
+*** End of simulation Predatory ***
+
